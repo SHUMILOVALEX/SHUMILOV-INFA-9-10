@@ -151,3 +151,39 @@ int main(){
 }
 }
 }
+Task 10.1
+
+#include<iostream>
+#include<utility>
+using namespace std;
+template<class G>
+void swaper(G& a, G& b){
+     swap(a,b);
+    
+}
+int main(){
+    int d = 6, c = 14;
+    swaper(d,c);
+    cout<<d<<" "<<c;
+}
+
+Task 10.2
+#include<iostream>
+#include<utility>
+using namespace std;
+template<class G>
+G mymin(const G& a,const G& b){
+    if (a<b){
+        return a;
+    }
+    else{
+        return b;
+    }
+}
+
+int main(){
+    string C = "rtghjkkkkkkkk";
+    string D= " qwertyui";
+    cout<<mymin(C,D);
+}
+Task 10.3
