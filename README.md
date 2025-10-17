@@ -99,3 +99,55 @@ int main(){
     cin>>num1;
     cout<<vozved(num,num1);
 }
+Task 9.4
+#include<iostream>
+#include<string>
+using namespace std;
+int stroka(string str){
+    int k;
+    for (char i : str){
+        k++;
+    }
+    return k;
+    
+}
+
+int main(){
+    string a;
+    getline(cin,a);
+    int b = stroka(a);
+cout<<"\n"<<"volume of num = "<<b;
+    
+}
+
+Task 9.5
+#include<iostream>
+#include<cmath>
+using namespace std;
+bool del(int n){
+    if (n<2){
+        return false;
+    }
+        for (size_t i = 2; i!=sqrt(n);i++){
+            if (n % i == 0){
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    }
+
+int main(){
+    int N;
+    cout<<"input N";
+    cin>>N;
+    cout<<"simple num";
+    for (size_t i = 1; i <= N;i++){
+        int num = i;
+        if (del(num) == true){
+            cout<<i<<" ";
+            
+}
+}
+}
