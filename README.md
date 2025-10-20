@@ -187,3 +187,57 @@ int main(){
     cout<<mymin(C,D);
 }
 Task 10.3
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+template <typename T, typename T2>
+T sumArray(const vector<T>& vec, const T2& a){
+    T sum = 0;
+    for (size_t i = 0; i<=a;i++){
+        sum += vec[i];
+    }
+    return sum;
+}
+
+
+
+
+int main(){
+    vector<double> a = {6234.4,2.1235,4.12345,2.16,4.25,5.62,2.672,2.62,4.89,3.097,4.53,6.84};
+    cout<<sumArray(a,a.size());
+    return 0;
+    
+}
+Task 10.4
+
+#include<iostream>
+#include<vector>
+using namespace std;
+
+template <typename T, typename T2, typename T3>
+bool sumArray(const vector<T>& vec, const T2& a, const T3& c){
+    for (size_t i = 0; i<=a;i++){
+        if (vec[i] == c){
+    return true;
+        }
+    return false;
+        
+}
+}
+
+
+
+
+int main(){
+    vector<double> a = {6234.4,2.1235,4.12345,2.16,4.25,5.62,2.672,2.62,4.89,3.097,4.53,6.84};
+    vector<string> b = {"qwe","rty","90312"};
+    cout<<sumArray(a,a.size(),621)<<endl;
+    cout<<sumArray(b,a.size(),"qwe")<<endl;
+    
+   return 0;
+    
+}
+
+
